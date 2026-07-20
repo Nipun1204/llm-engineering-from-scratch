@@ -1,7 +1,4 @@
 import math
-max_logit=0
-total=0
-loss=0
 def softmax(logits:list):
     prob=[]
     n=len(logits)
@@ -23,7 +20,4 @@ def softmax(logits:list):
     return prob        
 
 
-def crossentrophy(prob,target):
-    n=len(prob)
-    loss=-(math.log(prob[target]))
-    return loss
+
